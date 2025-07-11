@@ -8,7 +8,7 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get(`${process.env.API_URL}/allPositions`).then((res) => {
+    axios.get(`${process.env.API_URL}newOrder`).then((res) => {
       setAllPositions(res.data)
     })
   },  [])

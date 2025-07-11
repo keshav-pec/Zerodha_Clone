@@ -848,16 +848,16 @@ hr {
   background-color: rgb(212, 212, 212);
 }
 
-/* body {
+body {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(222, 240, 255, 1) 50%,
     rgba(199, 233, 255, 1) 99%
   );
-} */
+}
 
-body {
+/* body {
   background-image: url("https://www.shutterstock.com/image-photo/abstract-blurred-double-exposure-stock-260nw-719216644.jpg");
   background-size: cover;
-}
+} */
