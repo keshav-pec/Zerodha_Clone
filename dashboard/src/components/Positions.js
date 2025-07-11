@@ -1,4 +1,5 @@
 import React from "react";
+require("dotenv").config();
 // import { positions } from "../data/data";
 import { useEffect } from "react";
 import axios from "axios";
@@ -8,7 +9,7 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("https://zerodha-clone-z0ts.onrender.com/allPositions").then((res) => {
+    axios.get(`${process.env.API_URL}/allPositions`).then((res) => {
       setAllPositions(res.data)
     })
   },  [])

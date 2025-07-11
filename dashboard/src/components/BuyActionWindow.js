@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+require("dotenv").config();
 import { Link } from "react-router-dom";
 
 import axios from "axios";
@@ -12,7 +13,7 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("https://zerodha-clone-z0ts.onrender.com/newOrder", {
+    axios.post(`${process.env.API_URL}/newOrder`, {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

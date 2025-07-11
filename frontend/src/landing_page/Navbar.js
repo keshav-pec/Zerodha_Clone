@@ -30,9 +30,9 @@ function Navbar() {
           <form className="d-flex" role="search" style={{marginLeft: "auto"}}>
             <ul className="navbar-nav mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/signup">
-                  Signup
-                </Link>
+                <a className="nav-link" aria-current="page" href="https://kite-demo.vercel.app/">
+                  Dashboard
+                </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">

@@ -1,4 +1,5 @@
 import React from "react";
+require("dotenv").config();
 // import { holdings } from "../data/data";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -9,7 +10,7 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("https://zerodha-clone-z0ts.onrender.com/allHoldings").then((res) => {
+    axios.get(`${process.env.API_URL}/allHoldings`).then((res) => {
       setAllHoldings(res.data)
     })
   }, []);
