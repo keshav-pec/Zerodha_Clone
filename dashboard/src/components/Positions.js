@@ -1,5 +1,4 @@
 import React from "react";
-require("dotenv").config();
 // import { positions } from "../data/data";
 import { useEffect } from "react";
 import axios from "axios";

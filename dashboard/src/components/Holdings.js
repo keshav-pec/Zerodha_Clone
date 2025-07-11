@@ -1,5 +1,4 @@
 import React from "react";
-require("dotenv").config();
 // import { holdings } from "../data/data";
 import { useState } from "react";
 import { useEffect } from "react";

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-require("dotenv").config();
 import { Link } from "react-router-dom";
 
 import axios from "axios";
