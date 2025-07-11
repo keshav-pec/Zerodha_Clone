@@ -12,8 +12,8 @@ function Footer() {
               alt="Logo"
             />
             <p className="mt-3 text-muted" style={{fontSize: "0.9rem"}}>
-              &copy; 2010 - 2024, Not Zerodha Broking Ltd. <br />
-              All rights reserved.
+              &copy; Zerodha Pvt. Ltd. <br />
+              Created by Keshav Goyal
             </p>
           </div>
           <div className="col">
